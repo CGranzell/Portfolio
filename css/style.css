@@ -434,7 +434,7 @@ section#contact {
 
 /* ------------- Media queries ---------------- */
 
-@media screen and (max-width: 1208px) {
+/* @media screen and (max-width: 1208px) {
   h1 {
     font-size: 4rem;
   }
@@ -491,6 +491,7 @@ section#contact {
     margin-left: 1.7rem;
   }
 }
+
 @media screen and (max-width: 896px) {
   h1 {
     font-size: 2rem;
@@ -575,7 +576,7 @@ section#contact {
     font-size: 1.6rem;
     margin-top: 5rem;
   }
-  /* -----Buttons ----*/
+
   .btn {
     margin-top: 2rem;
     margin-bottom: 0;
@@ -603,8 +604,8 @@ section#contact {
   .contact-form-input {
     width: 30rem;
   }
-}
-@media screen and (max-width: 699px) {
+} */
+/* @media screen and (max-width: 699px) {
   p {
     font-size: 0.8rem;
   }
@@ -639,7 +640,7 @@ section#contact {
   .contact-form-input {
     width: 20rem;
   }
-  /* -----Buttons ----*/
+
   .btn {
     margin-top: 2rem;
     margin-bottom: 0;
@@ -668,9 +669,9 @@ section#contact {
     font-size: 0.7rem;
     width: 80%;
   }
-}
+} */
 
-@media screen and (max-width: 538) {
+/* @media screen and (max-width: 538) {
   p {
     font-size: 0.6rem;
   }
@@ -683,7 +684,7 @@ section#contact {
     color: red;
   }
 
-  /* -----Buttons ----*/
+ 
   .btn {
     padding: 0.3rem;
     font-size: 0.3rem;
@@ -700,26 +701,91 @@ section#contact {
     padding: 0.3rem;
     font-size: 0.3rem;
   }
-}
+} */
+@media screen and (max-width: 896px) {
+  #profile-photo {
+    margin-left: 0.2rem;
+    height: 60px;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .photo-container {
+    width: 80%;
+  }
+  .hamburger {
+    margin-top: 1.7rem;
+    display: block;
+    width: 6rem;
+  }
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 5.7rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 5rem;
+    text-align: center;
+    transition: 0.3s;
+  }
 
+  .nav-menu.active {
+    right: 0;
+  }
+  .navbar ul {
+    width: 100%;
+  }
+
+  .home-socials {
+    width: 3rem;
+  }
+  .home-socials img {
+    width: 30px;
+  }
+}
 @media screen and (max-width: 402px) {
+  section#home {
+    height: 26rem;
+  }
+
+  section#about {
+    height: 20rem;
+  }
+  section#projects {
+    /* height: 20rem; */
+  }
   h1 {
     font-size: 1.5rem;
   }
   p {
-    font-size: 0.4rem;
+    font-size: 0.8rem;
   }
+
+  /* .container-know-me,
+  .wrapper-my-skills {
+    margin-top: 0;
+  } */
   h2,
   .about-content h2,
   .project-content h2,
   .contact-content h2 {
+    margin-top: 1rem;
     font-size: 0.8rem;
+  }
+  .contact-content h2 {
+    margin-top: 3rem;
+  }
+  .container-know-me h3,
+  .wrapper-my-skills h3 {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #fff;
   }
   .skills {
     padding: 0.1rem 0.1rem;
     margin-bottom: 0.5rem;
     margin-right: 0.5rem;
-    font-size: 0.3rem;
+    font-size: 0.7rem;
     border: 1px solid rgb(255, 94, 0);
   }
   .photo-container a {
@@ -732,24 +798,27 @@ section#contact {
   .home-socials img {
     width: 20px;
   }
+  .project-content {
+    margin-top: 25rem;
+  }
   .project-display {
     color: #fff;
-    border: 8px solid rgb(255, 94, 0);
-    height: 7rem;
-    width: 7rem;
-    border-radius: 10%;
+    border: 6px solid rgb(255, 94, 0);
+    height: 8rem;
+    width: 8rem;
+    border-radius: 8%;
     place-self: flex-end;
   }
   .projects {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin-bottom: 11rem;
-    margin-top: 11rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   .projects-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
   .projects-info h3 {
     font-size: 1rem;
@@ -759,14 +828,16 @@ section#contact {
   }
   /* -----Buttons ----*/
   .btn {
-    padding: 0.3rem;
-    font-size: 0.3rem;
+    padding: 0.6rem;
+    font-size: 0.6rem;
     width: 40%;
   }
   .btn-github-code {
     padding: 0.3rem;
-    font-size: 0.3rem;
+    font-size: 0.7rem;
     width: 40%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .btn-skills {
     padding: 0.3rem;
@@ -775,8 +846,22 @@ section#contact {
   }
   .btn-contact {
     padding: 0.3rem;
-    font-size: 0.3rem;
-    /* width: 40%; */
+    font-size: 0.7rem;
+    width: 50%;
+  }
+  .contact-form-label {
+    font-size: 1.3rem;
+  }
+  .contact-form-input {
+    width: 14rem;
+  }
+  #name,
+  #email {
+    height: 1rem;
+  }
+  #message {
+    height: 5rem;
+    font-size: 1rem;
   }
   #profile-photo-footer {
     align-self: center;
@@ -788,7 +873,7 @@ section#contact {
   }
 }
 
-@media screen and (max-width: 353px) {
+/* @media screen and (max-width: 353px) {
   .project-content {
     margin-top: 28rem;
   }
@@ -823,4 +908,4 @@ section#contact {
   .contact-form-input {
     width: 10rem;
   }
-}
+} */
