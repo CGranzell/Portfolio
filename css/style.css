@@ -434,7 +434,14 @@ section#contact {
 
 /* ------------- Media queries ---------------- */
 
-/* @media screen and (max-width: 1208px) {
+@media screen and (max-width: 1208px) {
+  section#home {
+    height: 58rem;
+  }
+
+  section#about {
+    height: 40rem;
+  }
   h1 {
     font-size: 4rem;
   }
@@ -465,6 +472,13 @@ section#contact {
   }
 }
 @media screen and (max-width: 1130px) {
+  section#home {
+    height: 58rem;
+  }
+
+  section#about {
+    height: 40rem;
+  }
   p {
     font-size: 1.2rem;
   }
@@ -491,29 +505,14 @@ section#contact {
     margin-left: 1.7rem;
   }
 }
-
 @media screen and (max-width: 896px) {
-  h1 {
-    font-size: 2rem;
-  }
-  .container-know-me h3,
-  .wrapper-my-skills h3 {
-    font-size: 1.4rem;
-  }
-  h2,
-  .about-content h2,
-  .project-content h2,
-  .contact-content h2 {
-    font-size: 1rem;
-  }
-  p {
-    font-size: 1rem;
-  }
-  .btn {
-    padding: 0.7rem 1rem;
-    font-size: 1.1rem;
+  section#home {
+    height: 26rem;
   }
 
+  section#about {
+    height: 20rem;
+  }
   #profile-photo {
     margin-left: 0.2rem;
     height: 60px;
@@ -553,59 +552,16 @@ section#contact {
   .home-socials img {
     width: 30px;
   }
-  .project-content {
-    margin-bottom: 6rem;
-  }
-  .skills {
-    border: 1px solid black;
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
-    font-size: 1.3rem;
-    background: #131313;
-    border: 3px solid rgb(255, 94, 0);
-    border-radius: 5px;
-    font-weight: 600;
-    color: #666;
-  }
-  .project-display {
-    height: 20rem;
-    width: 20rem;
-  }
-  .projects-info h3 {
-    font-size: 1.6rem;
-    margin-top: 5rem;
+}
+
+@media screen and (max-width: 699px) {
+  section#home {
+    height: 26rem;
   }
 
-  .btn {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    padding: 0.9rem;
-    font-size: 0.9rem;
+  section#about {
+    height: 20rem;
   }
-  .btn-github-code {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    padding: 0.9rem;
-    font-size: 0.9rem;
-  }
-  .btn-skills {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    padding: 0.9rem;
-    font-size: 0.9rem;
-  }
-  .btn-contact {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    padding: 0.9rem;
-    font-size: 0.9rem;
-  }
-  .contact-form-input {
-    width: 30rem;
-  }
-} */
-/* @media screen and (max-width: 699px) {
   p {
     font-size: 0.8rem;
   }
@@ -669,9 +625,9 @@ section#contact {
     font-size: 0.7rem;
     width: 80%;
   }
-} */
+}
 
-/* @media screen and (max-width: 538) {
+@media screen and (max-width: 538) {
   p {
     font-size: 0.6rem;
   }
@@ -684,7 +640,6 @@ section#contact {
     color: red;
   }
 
- 
   .btn {
     padding: 0.3rem;
     font-size: 0.3rem;
@@ -701,48 +656,8 @@ section#contact {
     padding: 0.3rem;
     font-size: 0.3rem;
   }
-} */
-@media screen and (max-width: 896px) {
-  #profile-photo {
-    margin-left: 0.2rem;
-    height: 60px;
-  }
-  nav {
-    justify-content: space-between;
-  }
-  .photo-container {
-    width: 80%;
-  }
-  .hamburger {
-    margin-top: 1.7rem;
-    display: block;
-    width: 6rem;
-  }
-  .nav-menu {
-    position: fixed;
-    right: -100%;
-    top: 5.7rem;
-    flex-direction: column;
-    background-color: #fff;
-    width: 5rem;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  .nav-menu.active {
-    right: 0;
-  }
-  .navbar ul {
-    width: 100%;
-  }
-
-  .home-socials {
-    width: 3rem;
-  }
-  .home-socials img {
-    width: 30px;
-  }
 }
+
 @media screen and (max-width: 402px) {
   section#home {
     height: 26rem;
@@ -751,20 +666,13 @@ section#contact {
   section#about {
     height: 20rem;
   }
-  section#projects {
-    /* height: 20rem; */
-  }
+
   h1 {
     font-size: 1.5rem;
   }
   p {
     font-size: 0.8rem;
   }
-
-  /* .container-know-me,
-  .wrapper-my-skills {
-    margin-top: 0;
-  } */
   h2,
   .about-content h2,
   .project-content h2,
@@ -780,6 +688,25 @@ section#contact {
     font-size: 1rem;
     font-weight: 900;
     color: #fff;
+  }
+  .hamburger {
+    margin-top: 1.7rem;
+    display: block;
+    width: 6rem;
+  }
+  .nav-menu {
+    height: 17rem;
+  }
+
+  .navbar ul li {
+    margin: 1rem;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+  .navbar ul {
+    width: 100%;
   }
   .skills {
     padding: 0.1rem 0.1rem;
@@ -873,7 +800,7 @@ section#contact {
   }
 }
 
-/* @media screen and (max-width: 353px) {
+@media screen and (max-width: 353px) {
   .project-content {
     margin-top: 28rem;
   }
@@ -908,4 +835,4 @@ section#contact {
   .contact-form-input {
     width: 10rem;
   }
-} */
+}
